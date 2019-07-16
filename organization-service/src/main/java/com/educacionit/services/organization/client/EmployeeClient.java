@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.educacionit.services.organization.model.Employee;
 
+
+
+
 @FeignClient(name = "employee-service")
 public interface EmployeeClient {
 

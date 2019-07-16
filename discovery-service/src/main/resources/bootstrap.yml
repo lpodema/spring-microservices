@@ -1,6 +1,12 @@
+#
+# name:        bootstarp.yml
+# description: Set the global properties.
+# author:      Raul Pena (raul.pena@mac.com)
+#
+
 spring:
   application:
     name: discovery-service
   cloud:
     config:
-      uri: http://localhost:8088
+      uri: ${SPRING_CONFIG_URI:http://localhost:6010}
